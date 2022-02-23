@@ -14,7 +14,7 @@ type figurSide int
 // CalcSquare(10.0, SidesCircle)
 
 func CalcSquare(sideLen float64, sidesNum figurSide) float64 {
-	switch figurSide{
+	switch sidesNum{
 	case 0:
 		return float64(math.Pi*math.Sqrt(sideLen))
 	case 3:
