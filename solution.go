@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-type sides int
+type figurSide int
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
 // Define constants to represent 0, 3 and 4 sides.  Test uses mnemos: SidesTriangle(==3), SidesSquare(==4), SidesCircle(==0)
@@ -13,8 +13,8 @@ type sides int
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum sides) float64 {
-	switch sides{
+func CalcSquare(sideLen float64, sidesNum figurSide) float64 {
+	switch figurSide{
 	case 0:
 		return float64(math.Pi*math.Sqrt(sideLen))
 	case 3:
