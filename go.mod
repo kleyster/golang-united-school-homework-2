@@ -1,3 +1,3 @@
-module github.com/kleyster/golang-united-school-homework-2
+module square
 
 go 1.16
