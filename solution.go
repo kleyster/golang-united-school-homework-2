@@ -25,6 +25,7 @@ func CalcSquare(sideLen float64, sidesNum figurSide) float64 {
 	case SidesCircle:
 		return float64(math.Pi*math.Pow(sideLen,2))
 	case SidesTriangle:
+		var height float64
 		height = math.Pow(sideLen,2)-math.Pow((sideLen/2),2)
 		return float64((sideLen*height)/2)
 	case SidesSquare:
