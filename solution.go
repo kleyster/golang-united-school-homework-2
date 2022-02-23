@@ -13,13 +13,20 @@ type figurSide int
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
+const (
+	SidesTriangle = 3
+	SidesSquare = 4
+	SidesCircle = 0
+)
+
+
 func CalcSquare(sideLen float64, sidesNum figurSide) float64 {
 	switch sidesNum{
-	case 0:
+	case SidesCircle:
 		return float64(math.Pi*math.Sqrt(sideLen))
-	case 3:
+	case SidesTriangle:
 		return float64(math.Sqrt(3)/4)*math.Sqrt(sideLen)
-	case 4:
+	case SidesSquare:
 		return float64(math.Sqrt(sideLen))
 	}
 	return float64(0)
